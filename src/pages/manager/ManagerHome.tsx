@@ -98,7 +98,7 @@ export const ManagerHome = () => {
                       {projectRisks.length} risco(s) • {projectActions} ação(ões) pendente(s)
                     </p>
                   </div>
-                  <Button onClick={() => navigate(`/manager/projects/${project.id}`)}>
+                  <Button onClick={() => navigate(`/gestor/projetos/${project.id}`)}>
                     Ver Detalhes
                   </Button>
                 </div>

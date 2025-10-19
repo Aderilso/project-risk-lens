@@ -10,6 +10,7 @@ import { ProjectsPage } from "./pages/coordinator/ProjectsPage";
 import { ProjectDashboard } from "./pages/coordinator/ProjectDashboard";
 import { ManagerHome } from "./pages/manager/ManagerHome";
 import { ManagerProjectPage } from "./pages/manager/ManagerProjectPage";
+import { GestorProjectPage } from "./pages/manager/GestorProjectPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -35,6 +36,9 @@ const App = () => (
               {/* Manager Routes */}
               <Route path="/manager" element={<ManagerHome />} />
               <Route path="/manager/projects/:projectId" element={<ManagerProjectPage />} />
+              
+              {/* Gestor Routes */}
+              <Route path="/gestor/projetos/:projectId" element={<GestorProjectPage />} />
               
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
