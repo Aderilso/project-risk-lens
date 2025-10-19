@@ -98,7 +98,10 @@ export const ManagerHome = () => {
                       {projectRisks.length} risco(s) • {projectActions} ação(ões) pendente(s)
                     </p>
                   </div>
-                  <Button onClick={() => navigate(`/gestor/projetos/${project.id}`)}>
+                  <Button onClick={() => {
+                    console.log("Clicou no botão Ver Detalhes, navegando para:", `/gestor/projetos/${project.id}`);
+                    navigate(`/gestor/projetos/${project.id}`);
+                  }}>
                     Ver Detalhes
                   </Button>
                 </div>
