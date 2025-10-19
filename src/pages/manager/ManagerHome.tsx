@@ -99,8 +99,8 @@ export const ManagerHome = () => {
                     </p>
                   </div>
                   <Button onClick={() => {
-                    console.log("Clicou no botão Ver Detalhes, navegando para:", `/gestor/projetos/${project.id}`);
-                    navigate(`/gestor/projetos/${project.id}`);
+                    console.log("Clicou no botão Ver Detalhes, navegando para:", `/manager/projects/${project.id}`);
+                    navigate(`/manager/projects/${project.id}`);
                   }}>
                     Ver Detalhes
                   </Button>

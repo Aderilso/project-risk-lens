@@ -9,7 +9,6 @@ import { UsersPage } from "./pages/admin/UsersPage";
 import { ProjectsPage } from "./pages/coordinator/ProjectsPage";
 import { ProjectDashboard } from "./pages/coordinator/ProjectDashboard";
 import { ManagerHome } from "./pages/manager/ManagerHome";
-import { ManagerProjectPage } from "./pages/manager/ManagerProjectPage";
 import { GestorProjectPage } from "./pages/manager/GestorProjectPage";
 import NotFound from "./pages/NotFound";
 
@@ -35,7 +34,7 @@ const App = () => (
               
               {/* Manager Routes */}
               <Route path="/manager" element={<ManagerHome />} />
-              <Route path="/manager/projects/:projectId" element={<ManagerProjectPage />} />
+              <Route path="/manager/projects/:projectId" element={<GestorProjectPage />} />
               
               {/* Gestor Routes */}
               <Route path="/gestor/projetos/:projectId" element={<GestorProjectPage />} />
